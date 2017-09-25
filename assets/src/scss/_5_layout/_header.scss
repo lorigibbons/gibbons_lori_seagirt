@@ -17,8 +17,12 @@ header {
 .nav {
 
 	ul {
-		
+		display: flex;
+		@include no-bullets;
+
 		> li {
+			flex: 1;
+			text-align: center;
 
 			> a {
 

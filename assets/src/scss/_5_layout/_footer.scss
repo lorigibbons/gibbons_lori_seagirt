@@ -2,8 +2,27 @@
     #FOOTER
 \*------------------------------------*/
 .footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
 
-	.copyright {
-		
-	}
+  .stay-connected {
+      grid-column: 2 / span 5;
+      background-color: blue;
+    }
+  .visit-us {
+    grid-column: 7 / span 2;
+    background-color: green;
+  }
+  .sitemap {
+    grid-column: 9 / span 2;
+    background-color: black;
+  }
+  .copyright {
+    grid-column: 1 / span 12;
+    background-color: aqua;
+  }
 }

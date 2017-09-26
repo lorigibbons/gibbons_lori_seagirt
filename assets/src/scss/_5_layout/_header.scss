@@ -24,9 +24,19 @@ header {
 			flex: 1;
 			text-align: center;
 
+
 			> a {
 
 				&:hover {
+				}
+				&:link {
+					text-decoration: none;
+				}
+				&:visited {
+
+				}
+				&:active {
+					
 				}
 			}
 		}

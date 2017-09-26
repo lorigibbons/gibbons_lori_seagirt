@@ -6,11 +6,18 @@
 $baseurl 			: "/wp-content/themes/THEME-NAME";
 $font-path          : "#{$baseurl}/assets/dist/fonts";
 
-
 /* COLORS */
-
-
-
+$light-grey          : #d3e1e7;
+$dark-blue           : #2a4359;
+$light-blue          : #5a9bce;
 
 
 /* FONTS */
+$header               : 'Montserrat';
+$body                 : 'Cinzel';
+
+$weight-regular       : 400;
+$weight-black         : 900;
+
+
+$mobile-padding       : 20px;

@@ -1,16 +1,47 @@
 /*------------------------------------*\
     #GLOBALS
 \*------------------------------------*/
-html, 
+html,
 html > body,
-body { 
+body {
 	margin: 0;
-	padding: 0; 
+	padding: 0;
 }
 
-body { 
-	font-size: 16px; 
+body {
+	font-size: 16px;
 }
 
-::selection { 
+::selection {
+	background-color: $light-blue;
+	color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: $serif;
+	font-weight: 100;
+}
+
+h5, h6, p {
+	font-family: $sans;
+}
+
+h5 {
+	font-size: 1.2rem;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+h6 {
+	font-size: 1rem;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 0.8rem;
+	font-weight: lighter;
 }

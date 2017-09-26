@@ -8,21 +8,31 @@
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+  color: white;
 
   .stay-connected {
       grid-column: 2 / span 5;
-      background-color: blue;
+      background-color: $light-grey;
     }
   .visit-us {
     grid-column: 7 / span 2;
-    background-color: green;
+    background-color: $light-blue;
   }
   .sitemap {
     grid-column: 9 / span 2;
-    background-color: black;
+    background-color: $dark-blue;
   }
   .copyright {
     grid-column: 1 / span 12;
     background-color: aqua;
+  }
+  ul {
+    @include no-bullets;
+    a {
+      text-decoration: none;
+      &:visited {
+        color: white;
+      }
+    }
   }
 }

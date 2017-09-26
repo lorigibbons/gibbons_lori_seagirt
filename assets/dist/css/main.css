@@ -176,6 +176,38 @@ body {
 body {
   font-size: 16px; }
 
+::-moz-selection {
+  background-color: #5a9bce;
+  color: white; }
+
+::selection {
+  background-color: #5a9bce;
+  color: white; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cinzel";
+  font-weight: 100; }
+
+h5, h6, p {
+  font-family: "Montserrat"; }
+
+h5 {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  text-transform: uppercase; }
+
+h6 {
+  font-size: 1rem;
+  font-weight: lighter;
+  text-transform: uppercase; }
+
+p {
+  font-size: 0.8rem;
+  font-weight: lighter; }
+
 /*------------------------------------*    #FORM
 \*------------------------------------*/
 form {
@@ -264,19 +296,28 @@ input[type=submit] {
   grid-gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  color: white; }
   .footer .stay-connected {
     grid-column: 2 / span 5;
-    background-color: blue; }
+    background-color: #d3e1e7; }
   .footer .visit-us {
     grid-column: 7 / span 2;
-    background-color: green; }
+    background-color: #5a9bce; }
   .footer .sitemap {
     grid-column: 9 / span 2;
-    background-color: black; }
+    background-color: #2a4359; }
   .footer .copyright {
     grid-column: 1 / span 12;
     background-color: aqua; }
+  .footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .footer ul a {
+      text-decoration: none; }
+      .footer ul a:visited {
+        color: white; }
 
 /*------------------------------------*    #PIECES
 \*------------------------------------*/

@@ -30,3 +30,23 @@
       grid-column: 8 / span 2;
     }
 }
+
+.booking {
+  background-color: $dark-blue;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  text-align: center;
+  width: 60%;
+    &__title {
+      grid-column: 1 / span 10;
+    }
+    &__date {
+      grid-column: 2 / span 2;
+    }
+    &__visitors {
+      grid-column: 5 / span 2;
+    }
+    &__button {
+      grid-column: 8 / span 2;
+    }
+}

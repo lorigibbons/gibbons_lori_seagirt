@@ -13,19 +13,21 @@ header {
 /*------------------------------------*\
     #NAV
 \*------------------------------------*/
-
+header img {
+	width: 100%;
+}
 .nav {
 	background-color: $dark-blue;
 	text-transform: uppercase;
+	height: 40px;
 
 	ul {
-		display: flex;
+		display: flex;  //parent
 		@include no-bullets;
 
 		> li {
-			flex: 1;
+			flex: 1; //child
 			text-align: center;
-
 
 			> a {
 
@@ -38,7 +40,6 @@ header {
 
 				}
 				&:active {
-
 				}
 			}
 		}

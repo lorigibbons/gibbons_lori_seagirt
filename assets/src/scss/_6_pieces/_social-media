@@ -1,7 +1,3 @@
 /*------------------------------------*\
-    #PIECES
+    #SOCIAL-MEDIA
 \*------------------------------------*/
-
-@import "gravity-forms";
-@import "ratios";
-@import "social-media"

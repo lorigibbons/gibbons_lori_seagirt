@@ -20,12 +20,19 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+nav {
 	font-family: $serif;
 	font-weight: 100;
 }
 
-h5, h6, p {
+h5,
+h6,
+p,
+a,
+button,
+input,
+textarea {
 	font-family: $sans;
 }
 
@@ -41,7 +48,11 @@ h6 {
 	text-transform: uppercase;
 }
 
-p {
+p,
+a,
+textarea,
+button {
 	font-size: 0.8rem;
 	font-weight: lighter;
+	line-height: 1rem;
 }

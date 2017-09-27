@@ -212,9 +212,7 @@ h6 {
   text-transform: uppercase; }
 
 p,
-a,
-textarea,
-button {
+a {
   font-size: 0.8rem;
   font-weight: lighter;
   line-height: 1rem; }
@@ -257,8 +255,7 @@ textarea {
 button,
 input[type=submit] {
   border: none;
-  cursor: pointer;
-  height: 25px; }
+  cursor: pointer; }
 
 button {
   border: none;
@@ -270,14 +267,12 @@ button {
   color: white;
   padding: 5px;
   width: 100px;
-  height: 25px;
   -webkit-transition: 0.4s ease-in-out;
   -o-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   text-transform: uppercase; }
   button:hover {
-    -webkit-box-shadow: 2px 2px 7px #282a2c;
-    box-shadow: 2px 2px 7px #282a2c; }
+    color: blue; }
 
 /*------------------------------------*    #HR
 \*------------------------------------*/
@@ -346,18 +341,15 @@ a {
   position: relative;
   color: white;
   background-color: #2a4359; }
-  .footer__stay-connected {
+  .footer .stay-connected {
     grid-column: 2 / span 5;
     width: 60%; }
-  .footer__visit-us {
+  .footer .visit-us {
     grid-column: 7 / span 2; }
-  .footer__sitemap {
-    grid-column: 9 / span 3;
-    text-align: right;
-    text-transform: uppercase; }
-  .footer__copyright {
-    grid-column: 1 / span 12;
-    text-align: center; }
+  .footer .sitemap {
+    grid-column: 9 / span 3; }
+  .footer .copyright {
+    grid-column: 1 / span 12; }
   .footer ul {
     list-style: none;
     margin: 0;
@@ -366,6 +358,10 @@ a {
       text-decoration: none; }
       .footer ul a:visited {
         color: white; }
+  .footer .sitemap {
+    text-align: right; }
+  .footer .copyright {
+    text-align: center; }
 
 /*------------------------------------*    #PIECES
 \*------------------------------------*/
@@ -380,8 +376,6 @@ a {
 		| </div>
 
 	** Just remember, these are set up as extends and not as actual class names **
-\*------------------------------------*/
-/*------------------------------------*    #SOCIAL-MEDIA
 \*------------------------------------*/
 /*------------------------------------*    #PAGES
 \*------------------------------------*/

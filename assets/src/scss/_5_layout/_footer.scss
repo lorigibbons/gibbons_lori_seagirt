@@ -4,27 +4,27 @@
 .footer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
   color: white;
+  background-color: $dark-blue;
 
-  .stay-connected {
+  &__stay-connected {
       grid-column: 2 / span 5;
-      background-color: $light-grey;
+      width: 60%;
     }
-  .visit-us {
+  &__visit-us {
     grid-column: 7 / span 2;
-    background-color: $light-blue;
   }
-  .sitemap {
-    grid-column: 9 / span 2;
-    background-color: $dark-blue;
+  &__sitemap {
+    grid-column: 9 / span 3;
+    text-align: right;
+    text-transform: uppercase;
   }
-  .copyright {
+  &__copyright {
     grid-column: 1 / span 12;
-    background-color: aqua;
+    text-align: center;
   }
   ul {
     @include no-bullets;

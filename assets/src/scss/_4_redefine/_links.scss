@@ -3,7 +3,21 @@
 \*------------------------------------*/
 
 a {
+	color: white;
+	transition: 0.3s ease-in-out;
 
 	&:hover {
+		color: $light-blue;
+	}
+}
+
+.footer {
+	a {
+		color: $light-blue;
+		transition: 0.3s ease-in-out;
+
+		&:hover {
+			color: $light-grey;
+		}
 	}
 }

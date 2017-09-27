@@ -1,1 +1,13 @@
-
+/*------------------------------------*\
+    #HOME
+\*------------------------------------*/
+.index-article {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+    &__text {
+      grid-column: 1 / span 6;
+    }
+    &__image {
+      grid-column: 7 / span 6;
+    }
+}

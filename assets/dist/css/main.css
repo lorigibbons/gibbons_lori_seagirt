@@ -225,6 +225,9 @@ button {
   font-weight: lighter;
   line-height: 1rem; }
 
+.info-box {
+  padding: 16%; }
+
 /*------------------------------------*    #FORM
 \*------------------------------------*/
 form {
@@ -430,3 +433,12 @@ header img {
 
 /*------------------------------------*    #PAGES
 \*------------------------------------*/
+/*------------------------------------*    #HOME
+\*------------------------------------*/
+.index-article {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); }
+  .index-article__text {
+    grid-column: 1 / span 6; }
+  .index-article__image {
+    grid-column: 7 / span 6; }

@@ -13,11 +13,15 @@ a {
 
 .footer {
 	a {
-		color: $light-blue;
+		color: white;
 		transition: 0.3s ease-in-out;
 
 		&:hover {
-			color: $light-grey;
+			color: $light-blue;
 		}
+		&:visited, &:active {
+			color: white;
+		}
+
 	}
 }

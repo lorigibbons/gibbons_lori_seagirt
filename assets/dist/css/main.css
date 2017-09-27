@@ -298,12 +298,14 @@ a {
     color: #5a9bce; }
 
 .footer a {
-  color: #5a9bce;
+  color: white;
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out; }
   .footer a:hover {
-    color: #d3e1e7; }
+    color: #5a9bce; }
+  .footer a:visited, .footer a:active {
+    color: white; }
 
 /*------------------------------------*    #TYPOGRAPHY
 \*------------------------------------*/
@@ -347,7 +349,8 @@ a {
   color: white;
   background-color: #2a4359; }
   .footer__stay-connected {
-    grid-column: 2 / span 5;
+    grid-column: 2 / span 5; }
+  .footer__stay-connected p {
     width: 60%; }
   .footer__visit-us {
     grid-column: 7 / span 2; }
@@ -366,6 +369,15 @@ a {
       text-decoration: none; }
       .footer ul a:visited {
         color: white; }
+  .footer__social-media li {
+    display: inline; }
+
+.icon {
+  width: 30px;
+  height: 30px;
+  padding-top: 20px;
+  padding-right: 10px;
+  fill: white; }
 
 /*------------------------------------*    #PIECES
 \*------------------------------------*/

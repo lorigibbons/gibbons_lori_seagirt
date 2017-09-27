@@ -12,8 +12,10 @@
 
   &__stay-connected {
       grid-column: 2 / span 5;
-      width: 60%;
     }
+  &__stay-connected p {
+    width: 60%;
+  }
   &__visit-us {
     grid-column: 7 / span 2;
   }
@@ -35,4 +37,14 @@
       }
     }
   }
+  &__social-media li {
+    display: inline;
+  }
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  padding-top: 20px;
+  padding-right: 10px;
+  fill: white;
 }

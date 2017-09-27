@@ -12,6 +12,11 @@ body {
 	font-size: 16px;
 }
 
+.site-wrapper {
+	max-width: 1500px;
+	margin: auto;
+}
+
 ::selection {
 	background-color: $light-blue;
 	color: white;

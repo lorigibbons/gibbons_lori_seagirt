@@ -9,27 +9,17 @@
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Montserrat" rel="stylesheet">
   </head>
   <body>
-    <header>
-    <nav class="nav">
-      <ul>
-        <li class="home"><a href="index.html" target="_blank">Home</a></li>
-        <li class="about"><a href="#" target="_blank">About</a></li>
-        <li class="tours"><a href="#" target="_blank">Tours</a></li>
-        <li class="news"><a href="#" target="_blank">News</a></li>
-        <li class="contact"><a href="#" target="_blank">Contact</a></li>
-      </ul>
-    </nav>
-    <img src="src/dist/homepageheader.jpg" alt="Sea Girt Lighthouse"></img>
-    </header>
-
-
-    <footer class="footer">
-      <div class="footer__stay-connected">
-        <h6>Stay connected</h6>
-        <p>Join your neighbors and receive bi-weekly news emails to get latest Sea Girt updates.</p>
-        <input type="email" name="search" placeholder="EMAIL">
-        <button>Sign Up</button>
-        <ul class="footer__social-media">
+    <div class="site-wrapper">
+      <header>
+      <nav class="nav">
+        <ul class="nav__navigation">
+          <li class="home"><a href="index.html" target="_blank">Home</a></li>
+          <li class="about"><a href="#" target="_blank">About</a></li>
+          <li class="tours"><a href="#" target="_blank">Tours</a></li>
+          <li class="news"><a href="#" target="_blank">News</a></li>
+          <li class="contact"><a href="#" target="_blank">Contact</a></li>
+        </ul>
+        <ul class="nav__social-media">
           <!-- EMAIL -->
           <li><a href="#"><svg class="icon icon-mail"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-mail"></use></svg></a></li>
           <!-- FACEBOOK -->
@@ -39,25 +29,48 @@
           <!-- TWITTER -->
           <li><a href="#"><svg class="icon icon-twitter"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-twitter"></use></svg></a></use></li>
         </ul>
-      </div>
-      <div class="footer__visit-us">
-        <h6>ComeVisit Us!</h6>
-        <p>Sea Girt Lighthouse</p>
-        <p>123 Fake St.</p>
-        <p>Somewhere, NJ 12345</p>
-      </div>
-      <div class="footer__sitemap">
-        <h6>Sitemap</h6>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="tours.html">Tours</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <p class="footer__copyright">&copy; 2017 Lori Gibbons <br> "Creativity Springs From Desire"</p>
-    </footer>
+      </nav>
+      <img src="src/dist/homepageheader.jpg" alt="Sea Girt Lighthouse"></img>
+      </header>
+
+
+      <footer class="footer">
+        <div class="footer__stay-connected">
+          <h6>Stay connected</h6>
+          <p>Join your neighbors and receive bi-weekly news emails to get latest Sea Girt updates.</p>
+          <input type="email" name="search" placeholder="EMAIL">
+          <button>Sign Up</button>
+          <ul class="footer__social-media">
+            <!-- EMAIL -->
+            <li><a href="#"><svg class="icon icon-mail"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-mail"></use></svg></a></li>
+            <!-- FACEBOOK -->
+            <li><a href="#"><svg class="icon icon-facebook"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-facebook"></use></svg></li>
+            <!-- INSTAGRAM -->
+            <li><svg class="icon icon-instagram"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-instagram"></use></svg></li>
+            <!-- TWITTER -->
+            <li><a href="#"><svg class="icon icon-twitter"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-twitter"></use></svg></a></use></li>
+          </ul>
+        </div>
+        <div class="footer__visit-us">
+          <h6>ComeVisit Us!</h6>
+          <p>Sea Girt Lighthouse</p>
+          <p>123 Fake St.</p>
+          <p>Somewhere, NJ 12345</p>
+        </div>
+        <div class="footer__sitemap">
+          <h6>Sitemap</h6>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <p class="footer__copyright">&copy; 2017 Lori Gibbons <br> "Creativity Springs From Desire"</p>
+      </footer>
+    </div>
+
 
     <script src="/assets/dist/js/app.js" charset="utf-8"></script>
   </body>

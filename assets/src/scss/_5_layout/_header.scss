@@ -19,11 +19,14 @@ header img {
 .nav {
 	background-color: $dark-blue;
 	text-transform: uppercase;
-	height: 40px;
+	height: 60sspx;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
 
-	ul {
+	ul.nav__navigation {
 		display: flex;  //parent
 		@include no-bullets;
+		grid-column: 1 / span 7;
 
 		> li {
 			flex: 1; //child
@@ -42,6 +45,16 @@ header img {
 				&:active {
 				}
 			}
+		}
+	}
+	ul.nav__social-media {
+		@include no-bullets;
+		grid-column: 8 / span 5;
+		display: flex;
+		justify-content: flex-end;
+
+		> li {
+				flex: 1;
 		}
 	}
 }

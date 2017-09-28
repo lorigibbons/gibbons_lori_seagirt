@@ -1,3 +1,14 @@
 /*------------------------------------*\
     #TOUR
 \*------------------------------------*/
+.tours-main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+    &__section1-text {
+      grid-column: 2 / span 5;
+    }
+    &__section1-image {
+      grid-column: 6 / span 6;
+    }
+}

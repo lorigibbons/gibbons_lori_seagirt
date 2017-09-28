@@ -477,3 +477,13 @@ header img {
     grid-column: 5 / span 2; }
   .booking__button {
     grid-column: 8 / span 2; }
+
+/*------------------------------------*    #TOUR
+\*------------------------------------*/
+.tours-main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); }
+  .tours-main__section1-text {
+    grid-column: 2 / span 5; }
+  .tours-main__section1-image {
+    grid-column: 6 / span 6; }

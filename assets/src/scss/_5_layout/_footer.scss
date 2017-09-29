@@ -17,6 +17,10 @@
   }
   &__visit-us {
     grid-column: 7 / span 2;
+
+    img {
+      width: 50%;
+    }
   }
   &__sitemap {
     grid-column: 9 / span 3;

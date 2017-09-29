@@ -396,6 +396,8 @@ header img {
     width: 60%; }
   .footer__visit-us {
     grid-column: 7 / span 2; }
+    .footer__visit-us img {
+      width: 50%; }
   .footer__sitemap {
     grid-column: 9 / span 3;
     text-align: right;
@@ -447,7 +449,8 @@ header img {
   .index-article__text {
     grid-column: 1 / span 6; }
   .index-article__image {
-    grid-column: 7 / span 6; }
+    grid-column: 7 / span 6;
+    width: 100%; }
 
 .fun-facts {
   background-color: #5a9bce;
@@ -487,3 +490,14 @@ header img {
     grid-column: 2 / span 5; }
   .tours-main__section1-image {
     grid-column: 6 / span 6; }
+
+/*------------------------------------*    #ABOUT
+\*------------------------------------*/
+.about-header__text {
+  text-align: right;
+  margin-left: 40px; }
+
+.about-header img {
+  width: 20%; }
+
+/*# sourceMappingURL=main.css.map */

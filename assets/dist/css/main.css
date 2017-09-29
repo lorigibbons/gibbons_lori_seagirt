@@ -873,11 +873,32 @@ header img {
 
 /*------------------------------------*    #ABOUT
 \*------------------------------------*/
-.about-header__text {
-  text-align: right;
-  margin-left: 40px; }
+.about-header {
+  position: relative; }
+  .about-header__text {
+    position: absolute;
+    color: white;
+    text-align: right;
+    top: 50px;
+    left: 40%;
+    padding-right: 15px;
+    border-right: 1px solid white; }
+  .about-header img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+    object-fit: cover; }
 
-.about-header img {
-  width: 20%; }
+.main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); }
+  .main__about__text {
+    grid-column: 1 / span 6; }
+  .main__about img {
+    grid-column: 6 / span 6; }
+  .main__achievements img {
+    grid-column: 6 / span 6; }
+  .main__achievements__text {
+    grid-column: 1 / span 6; }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,12 +2,41 @@
     #ABOUT
 \*------------------------------------*/
 .about-header {
+  position: relative;
+
   &__text {
+    position: absolute;
+    color: white;
     text-align: right;
-    margin-left: 40px;
+    top: 50px;
+    left: 40%;
+    padding-right: 15px;
+    border-right: 1px solid white;
   }
 
   img {
-    width: 20%; //test
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  &__about__text {
+    grid-column: 1 / span 6;
+  }
+
+  &__about img {
+    grid-column: 6 / span 6;
+  }
+
+  &__achievements img{
+    grid-column: 6 / span 6;
+  }
+  &__achievements__text {
+    grid-column: 1 / span 6;
   }
 }

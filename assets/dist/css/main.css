@@ -397,7 +397,7 @@ header img {
   .footer__visit-us {
     grid-column: 7 / span 2; }
     .footer__visit-us img {
-      width: 50%; }
+      width: 25%; }
   .footer__sitemap {
     grid-column: 9 / span 3;
     text-align: right;
@@ -456,7 +456,10 @@ header img {
   background-color: #5a9bce;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  text-align: center; }
+  text-align: center;
+  padding-top: 20px; }
+  .fun-facts img {
+    width: 20%; }
   .fun-facts__fact1 {
     grid-column: 2 / span 2; }
   .fun-facts__fact2 {

@@ -18,6 +18,12 @@
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   text-align: center;
+  padding-top: 20px;
+
+    img {
+      width: 20%;
+    }
+
     &__fact1 {
       grid-column: 2 / span 2;
     }

@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    #NEWS
+\*------------------------------------*/
+.center-heading {
+  h2 {
+    text-align: center;
+  }
+}
+
+.news-blogs {
+  display:flexbox;
+
+  &__card {
+    flex: 1;
+  }
+}

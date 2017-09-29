@@ -1,0 +1,14 @@
+/*------------------------------------*    #NEWS
+\*------------------------------------*/
+.center-heading h2 {
+  text-align: center; }
+
+.news-blogs {
+  display: flexbox; }
+  .news-blogs__card {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+
+/*# sourceMappingURL=_news.css.map */

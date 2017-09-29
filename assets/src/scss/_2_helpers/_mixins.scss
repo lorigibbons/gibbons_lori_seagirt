@@ -10,6 +10,7 @@
 	- arrow
 	- hamburger
 	- aspect-ratio
+	- center text, for heading
 
 \*------------------------------------*/
 
@@ -168,4 +169,9 @@
     right: 0;
     bottom: 0;
   }
+}
+
+
+@mixin center-text() {
+	text-align: center;
 }

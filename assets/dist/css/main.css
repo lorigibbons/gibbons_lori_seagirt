@@ -606,7 +606,7 @@ textarea,
 button {
   font-size: 0.8rem;
   font-weight: lighter;
-  line-height: 1.2rem; }
+  line-height: 1.5rem; }
 
 .site-wrapper {
   padding: 40px; }
@@ -988,12 +988,31 @@ header img {
 
 /*------------------------------------*    #TOUR
 \*------------------------------------*/
+.tours-header {
+  position: relative; }
+  .tours-header__text {
+    position: absolute;
+    color: white;
+    text-align: right;
+    top: 20%;
+    left: 35vw;
+    padding-right: 15px;
+    border-right: 1px solid white; }
+  .tours-header img {
+    width: 100%;
+    height: 50vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+    top: 50px; }
+
 .tours-main {
   display: grid;
-  grid-template-columns: repeat(12, 1fr); }
-  .tours-main__section1-text {
-    grid-column: 2 / span 5; }
-  .tours-main__section1-image {
-    grid-column: 6 / span 6; }
+  grid-template-columns: repeat(12, 1fr [col-start]); }
+  .tours-main__section-text {
+    grid-column: 1 / span 6;
+    padding: 40px; }
+  .tours-main__image {
+    grid-column: 7 / span 6;
+    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

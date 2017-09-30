@@ -24,28 +24,46 @@
 
 .main {
   display: grid;
-  grid-template-columns: repeat(2, 1fr [col-start]);
-  grid-template-areas: "left right";
-  &__about img {
-    grid-area: left;
-  }
-  &__about__text {
-    grid-area: right;
-  }
+  grid-template-columns: repeat(12, 1fr);
 
-/*  &__about img {
+  &__about img {
     grid-column: 1 / span 6;
+    width: 20%;
   }
   &__about__text {
-    grid-column: 6 / span 6;
+    grid-column: 7 / span 6;
     height: 450px;
     background-color: $light-grey;
   }
   &__achievements__text {
     grid-column: 1 / span 6;
+    height: 450px;
   }
   &__achievements img {
-    grid-column: 6 / span 6;
+    grid-column: 7 / span 6;
+    width: 20%;
   }
-*/
+  &__saving img {
+    grid-column: 1 / span 6;
+    width: 20%;
+  }
+  &__saving__text {
+    grid-column: 7 / span 6;
+    background-color: $light-grey;
+  }
+  &__visitors__text {
+    grid-column: 1 / span 6;
+  }
+  &__visitors img {
+    grid-column: 7 / span 6;
+    width: 20%;
+  }
+  &__history img {
+    grid-column: 1 / span 6;
+    width: 20%;
+  }
+  &__history__text {
+    grid-column: 7 / span 6;
+    background-color: $light-grey;
+  }
 }

@@ -851,27 +851,37 @@ header img {
 
 .main {
   display: grid;
-  grid-template-columns: repeat(2, 1fr [col-start]);
-  grid-template-areas: "left right";
-  /*  &__about img {
-    grid-column: 1 / span 6;
-  }
-  &__about__text {
-    grid-column: 6 / span 6;
-    height: 450px;
-    background-color: $light-grey;
-  }
-  &__achievements__text {
-    grid-column: 1 / span 6;
-  }
-  &__achievements img {
-    grid-column: 6 / span 6;
-  }
-*/ }
+  grid-template-columns: repeat(12, 1fr); }
   .main__about img {
-    grid-area: left; }
+    grid-column: 1 / span 6;
+    width: 20%; }
   .main__about__text {
-    grid-area: right; }
+    grid-column: 7 / span 6;
+    height: 450px;
+    background-color: #d3e1e7; }
+  .main__achievements__text {
+    grid-column: 1 / span 6;
+    height: 450px; }
+  .main__achievements img {
+    grid-column: 7 / span 6;
+    width: 20%; }
+  .main__saving img {
+    grid-column: 1 / span 6;
+    width: 20%; }
+  .main__saving__text {
+    grid-column: 7 / span 6;
+    background-color: #d3e1e7; }
+  .main__visitors__text {
+    grid-column: 1 / span 6; }
+  .main__visitors img {
+    grid-column: 7 / span 6;
+    width: 20%; }
+  .main__history img {
+    grid-column: 1 / span 6;
+    width: 20%; }
+  .main__history__text {
+    grid-column: 7 / span 6;
+    background-color: #d3e1e7; }
 
 /*------------------------------------*    #HOME
 \*------------------------------------*/

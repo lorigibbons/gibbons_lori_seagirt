@@ -11,6 +11,16 @@ a {
 	}
 }
 
+a:link.red-link {
+	color: $red;
+	transition: 0.3s ease-in-out;
+	text-decoration: none;
+
+	&:hover {
+		color: $light-blue;
+	}
+}
+
 .footer {
 	a {
 		color: white;

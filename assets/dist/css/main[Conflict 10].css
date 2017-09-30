@@ -913,8 +913,13 @@ header img {
   text-align: center; }
 
 .news-blogs {
-  display: gird;
-  grid-template-columns: repeat 12, 1fr; }
+  display: grid;
+  grid-template-columns: repeat(12, 1fr [col-start]);
+  grid-gap: 20px; }
+  .news-blogs__card {
+    grid-column: 1 / span 3; }
+    .news-blogs__card img {
+      width: 100%; }
 
 /*------------------------------------*    #TOUR
 \*------------------------------------*/
@@ -926,4 +931,4 @@ header img {
   .tours-main__section1-image {
     grid-column: 6 / span 6; }
 
-/*# sourceMappingURL=main-dist.css.map */
+/*# sourceMappingURL=main.css.map */

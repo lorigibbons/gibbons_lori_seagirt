@@ -24,7 +24,7 @@
 
 .main {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr [col-start]);
   grid-template-areas: "left right";
   &__about img {
     grid-area: left;

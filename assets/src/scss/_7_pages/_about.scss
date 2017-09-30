@@ -26,44 +26,20 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 
-  &__about img {
+  &__about, &__saving, &__history {
     grid-column: 1 / span 6;
-    width: 20%;
+
+    img {
+      width: 50%;
+    }
   }
-  &__about__text {
+  &__about__text, &__saving__text, &__preserving__text {
     grid-column: 7 / span 6;
     height: 450px;
     background-color: $light-grey;
   }
-  &__achievements__text {
+  &__achievements__text, &__visitors__text {
     grid-column: 1 / span 6;
     height: 450px;
-  }
-  &__achievements img {
-    grid-column: 7 / span 6;
-    width: 20%;
-  }
-  &__saving img {
-    grid-column: 1 / span 6;
-    width: 20%;
-  }
-  &__saving__text {
-    grid-column: 7 / span 6;
-    background-color: $light-grey;
-  }
-  &__visitors__text {
-    grid-column: 1 / span 6;
-  }
-  &__visitors img {
-    grid-column: 7 / span 6;
-    width: 20%;
-  }
-  &__history img {
-    grid-column: 1 / span 6;
-    width: 20%;
-  }
-  &__history__text {
-    grid-column: 7 / span 6;
-    background-color: $light-grey;
   }
 }

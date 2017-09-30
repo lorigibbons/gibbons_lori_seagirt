@@ -852,36 +852,17 @@ header img {
 .main {
   display: grid;
   grid-template-columns: repeat(12, 1fr); }
-  .main__about img {
-    grid-column: 1 / span 6;
-    width: 20%; }
-  .main__about__text {
+  .main__about, .main__saving, .main__history {
+    grid-column: 1 / span 6; }
+    .main__about img, .main__saving img, .main__history img {
+      width: 50%; }
+  .main__about__text, .main__saving__text, .main__preserving__text {
     grid-column: 7 / span 6;
     height: 450px;
     background-color: #d3e1e7; }
-  .main__achievements__text {
+  .main__achievements__text, .main__visitors__text {
     grid-column: 1 / span 6;
     height: 450px; }
-  .main__achievements img {
-    grid-column: 7 / span 6;
-    width: 20%; }
-  .main__saving img {
-    grid-column: 1 / span 6;
-    width: 20%; }
-  .main__saving__text {
-    grid-column: 7 / span 6;
-    background-color: #d3e1e7; }
-  .main__visitors__text {
-    grid-column: 1 / span 6; }
-  .main__visitors img {
-    grid-column: 7 / span 6;
-    width: 20%; }
-  .main__history img {
-    grid-column: 1 / span 6;
-    width: 20%; }
-  .main__history__text {
-    grid-column: 7 / span 6;
-    background-color: #d3e1e7; }
 
 /*------------------------------------*    #HOME
 \*------------------------------------*/

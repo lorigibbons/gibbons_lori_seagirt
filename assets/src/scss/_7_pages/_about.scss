@@ -8,35 +8,44 @@
     position: absolute;
     color: white;
     text-align: right;
-    top: 50px;
-    left: 40%;
+    top: 20%;
+    left: 35vw;
     padding-right: 15px;
     border-right: 1px solid white;
   }
 
   img {
     width: 100%;
-    height: 400px;
+    height: 50vh;
     object-fit: cover;
+    top: 50px;
   }
 }
 
 .main {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "left right";
+  &__about img {
+    grid-area: left;
+  }
   &__about__text {
+    grid-area: right;
+  }
+
+/*  &__about img {
     grid-column: 1 / span 6;
   }
-
-  &__about img {
+  &__about__text {
     grid-column: 6 / span 6;
-  }
-
-  &__achievements img{
-    grid-column: 6 / span 6;
+    height: 450px;
+    background-color: $light-grey;
   }
   &__achievements__text {
     grid-column: 1 / span 6;
   }
+  &__achievements img {
+    grid-column: 6 / span 6;
+  }
+*/
 }

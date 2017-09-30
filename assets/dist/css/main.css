@@ -581,6 +581,9 @@ input,
 textarea {
   font-family: "Montserrat"; }
 
+h2 {
+  font-size: 2.5vw; }
+
 h4 {
   color: white;
   font-size: 1.8rem; }
@@ -603,7 +606,7 @@ textarea,
 button {
   font-size: 0.8rem;
   font-weight: lighter;
-  line-height: 1rem; }
+  line-height: 1.2rem; }
 
 .info-box {
   padding: 16%; }
@@ -879,26 +882,39 @@ header img {
     position: absolute;
     color: white;
     text-align: right;
-    top: 50px;
-    left: 40%;
+    top: 20%;
+    left: 35vw;
     padding-right: 15px;
     border-right: 1px solid white; }
   .about-header img {
     width: 100%;
-    height: 400px;
+    height: 50vh;
     -o-object-fit: cover;
-    object-fit: cover; }
+    object-fit: cover;
+    top: 50px; }
 
 .main {
   display: grid;
-  grid-template-columns: repeat(12, 1fr); }
-  .main__about__text {
-    grid-column: 1 / span 6; }
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "left right";
+  /*  &__about img {
+    grid-column: 1 / span 6;
+  }
+  &__about__text {
+    grid-column: 6 / span 6;
+    height: 450px;
+    background-color: $light-grey;
+  }
+  &__achievements__text {
+    grid-column: 1 / span 6;
+  }
+  &__achievements img {
+    grid-column: 6 / span 6;
+  }
+*/ }
   .main__about img {
-    grid-column: 6 / span 6; }
-  .main__achievements img {
-    grid-column: 6 / span 6; }
-  .main__achievements__text {
-    grid-column: 1 / span 6; }
+    grid-area: left; }
+  .main__about__text {
+    grid-area: right; }
 
 /*# sourceMappingURL=main.css.map */

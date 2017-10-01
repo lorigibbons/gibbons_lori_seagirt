@@ -1011,26 +1011,49 @@ header img {
   .services-grid__volunteer {
     grid-column: 8 / span 2; }
 
-/*
-.booking {
-  background-color: $dark-blue;
+.testimonials {
+  background-color: #5a9bce;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   text-align: center;
-  width: 60%;
-    &__title {
-      grid-column: 1 / span 10;
-    }
-    &__date {
-      grid-column: 2 / span 2;
-    }
-    &__visitors {
-      grid-column: 5 / span 2;
-    }
-    &__button {
-      grid-column: 8 / span 2;
-    }
-}*/
+  padding: 40px 0; }
+  .testimonials__text {
+    grid-column: 2 / span 5;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px; }
+    .testimonials__text p {
+      font-size: 4vh;
+      line-height: 4vh;
+      font-family: "Cinzel";
+      color: #2a4359; }
+    .testimonials__text p:last-child {
+      -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      font-size: 3.5vh;
+      padding-top: 20px; }
+    .testimonials__text span {
+      font-size: 4.4vh; }
+  .testimonials img {
+    grid-column: 7 / span 5;
+    width: 100%; }
+
 /*------------------------------------*    #TOUR
 \*------------------------------------*/
 .tours-header {

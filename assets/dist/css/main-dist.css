@@ -543,6 +543,11 @@ Reference: http://stackoverflow.com/questions/27492191/how-to-make-a-fancy-arrow
 \*------------------------------------*/
 /*------------------------------------*    #GLOBALS
 \*------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
 html,
 html > body,
 body {
@@ -570,7 +575,8 @@ h3,
 h4,
 nav {
   font-family: "Cinzel";
-  font-weight: 100; }
+  font-weight: 100;
+  padding: 10px 0; }
 
 h5,
 h6,
@@ -592,7 +598,8 @@ h5 {
   font-size: 1.0rem;
   font-weight: lighter;
   text-transform: uppercase;
-  color: white; }
+  color: white;
+  padding: 10px 0; }
 
 h6 {
   font-size: 1rem;
@@ -980,16 +987,21 @@ header img {
 /*------------------------------------*    #SERVICES
 \*------------------------------------*/
 .services-header h2 {
-  text-align: center; }
+  text-align: center;
+  background-color: #2a4359;
+  color: white; }
 
 .services-grid {
-  background-color: blue;
+  background-color: #2a4359;
   display: grid;
+  grid-gap: 40px;
   grid-template-columns: repeat(10, 1fr);
   text-align: center;
-  padding-top: 30px; }
+  padding: 30px 0; }
+  .services-grid p {
+    color: white; }
   .services-grid img {
-    width: 10%; }
+    width: 30%; }
   .services-grid__tours {
     grid-column: 2 / span 2; }
   .services-grid__photo-tours {
@@ -999,26 +1011,18 @@ header img {
   .services-grid__volunteer {
     grid-column: 8 / span 2; }
 
-/*
-.booking {
-  background-color: $dark-blue;
+.testimonials {
+  background-color: #5a9bce;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   text-align: center;
-  width: 60%;
-    &__title {
-      grid-column: 1 / span 10;
-    }
-    &__date {
-      grid-column: 2 / span 2;
-    }
-    &__visitors {
-      grid-column: 5 / span 2;
-    }
-    &__button {
-      grid-column: 8 / span 2;
-    }
-}*/
+  width: 60%; }
+  .testimonials p {
+    grid-column: 1 / span 6; }
+  .testimonials img {
+    grid-column: 7 / span 6;
+    width: 50%; }
+
 /*------------------------------------*    #TOUR
 \*------------------------------------*/
 .tours-header {

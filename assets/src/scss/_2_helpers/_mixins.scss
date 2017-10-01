@@ -175,3 +175,7 @@
 @mixin center-text() {
 	text-align: center;
 }
+@mixin social-media() {
+	display: inline;
+	text-decoration: none;
+}

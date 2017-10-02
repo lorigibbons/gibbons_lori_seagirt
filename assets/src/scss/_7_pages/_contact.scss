@@ -40,17 +40,24 @@
 
   &__form {
     grid-column: 2 / span 5;
-    input, textarea {
-      display: block;
-      margin: 15px 0;
-      width: 70%;
-      color: black;
-    }
+    padding-bottom: 20px;
   }
   &__social-media {
     grid-column: 7 / span 4;
-    ul li {
-      @include social-media;
+    ul {
+      @include no-bullets;
+
+      li {
+        display: inline;
+
+        .icon {
+          width: 40px;
+          height: 40px;
+          padding-top: 20px;
+          padding-right: 30px;
+          fill: white;
+        }
+      }
     }
   }
 }

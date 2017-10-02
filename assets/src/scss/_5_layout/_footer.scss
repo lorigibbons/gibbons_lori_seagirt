@@ -8,10 +8,16 @@
   position: relative;
   color: white;
   background-color: $dark-blue;
-  padding: 20px 0;
+  padding: 30px 0;
 
   &__stay-connected {
       grid-column: 2 / span 5;
+
+      input[type=email] {
+        width: 40%;
+        margin-right: 20px;
+        color: $dark-blue;
+      }
     }
   &__stay-connected p {
     width: 60%;

@@ -605,8 +605,7 @@ h6 {
   font-size: 1rem;
   font-weight: lighter;
   text-transform: uppercase;
-  color: white;
-  padding-bottom: 10px; }
+  color: white; }
 
 p,
 a,
@@ -813,9 +812,7 @@ header img {
   .footer__stay-connected {
     grid-column: 2 / span 5; }
     .footer__stay-connected input[type=email] {
-      width: 40%;
-      margin-right: 20px;
-      color: #2a4359; }
+      width: 40%; }
   .footer__stay-connected p {
     width: 60%; }
   .footer__visit-us {

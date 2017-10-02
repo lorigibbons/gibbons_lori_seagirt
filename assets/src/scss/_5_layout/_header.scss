@@ -15,18 +15,23 @@ header {
 \*------------------------------------*/
 header img {
 	width: 100%;
+	object-fit: cover;
 }
 .nav {
 	background-color: $dark-blue;
 	text-transform: uppercase;
-	height: 60sspx;
+	height: 40px;
+	width: 100%;
+	position: fixed;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
+	z-index: map-get($zindex, navigation);
 
-	ul.nav__navigation {
+	&__navigation {
 		display: flex;  //parent
 		@include no-bullets;
 		grid-column: 1 / span 7;
+		align-items: center;
 
 		> li {
 			flex: 1; //child
@@ -49,7 +54,7 @@ header img {
 	}
 	ul.nav__social-media {
 		@include no-bullets;
-		grid-column: 8 / span 5;
+		grid-column: 8 / span 4;
 		display: flex;
 		justify-content: flex-end;
 

@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 header {
-
+	position: relative;
 }
 
 
@@ -13,9 +13,15 @@ header {
 /*------------------------------------*\
     #NAV
 \*------------------------------------*/
-header img {
+.lighthouse-image {
 	width: 100%;
 	object-fit: cover;
+}
+.sg-logo {
+	position: absolute;
+	width: 25%;
+	top: 12%;
+	left: 40%;
 }
 .nav {
 	background-color: $dark-blue;

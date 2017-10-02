@@ -588,7 +588,7 @@ textarea {
   font-family: "Montserrat"; }
 
 h2 {
-  font-size: 3rem; }
+  font-size: 2.5vw; }
 
 h4 {
   color: white;
@@ -844,7 +844,7 @@ header img {
   width: 60%;
   height: 150px;
   position: absolute;
-  top: 35%;
+  top: -10%;
   left: 20%; }
   .booking__title {
     grid-column: 1 / span 10; }
@@ -972,7 +972,6 @@ header img {
 /*------------------------------------*    #HOME
 \*------------------------------------*/
 .index-article {
-  max-height: 650px;
   display: grid;
   grid-template-columns: repeat(12, 1fr); }
   .index-article__text {
@@ -980,12 +979,11 @@ header img {
     .index-article__text h2 {
       padding-top: 40px; }
     .index-article__text p {
-      padding: 20px 0;
-      font-size: 1.1rem; }
+      padding: 20px 0; }
   .index-article__image {
     grid-column: 7 / span 6;
     width: 100%;
-    height: 650px;
+    height: 400px;
     -o-object-fit: cover;
     object-fit: cover; }
 

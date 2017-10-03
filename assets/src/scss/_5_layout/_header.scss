@@ -16,6 +16,7 @@ header {
 .lighthouse-image {
 	width: 100%;
 	object-fit: cover;
+	//FLIP HORIZONTAL
 	transform: scaleX(-1);
   filter: FlipH;
 }
@@ -30,7 +31,7 @@ header {
 	text-transform: uppercase;
 	height: 35px;
 	width: 100%;
-	position: fixed;
+	position: sticky;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	z-index: map-get($zindex, navigation);

@@ -62,6 +62,14 @@
       }
 }
 
+@include breakpoint(smaller-screen) {
+  .news-blogs1 p {
+    color: blue;
+  }
+}
+
+
+
 /* CSS GRID
 .news-blogs {
   padding: $desktop-padding;

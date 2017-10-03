@@ -771,12 +771,17 @@ header {
 .lighthouse-image {
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover; }
+  object-fit: cover;
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-filter: FlipH;
+  filter: FlipH; }
 
 .sg-logo {
   position: absolute;
   width: 35%;
-  top: 15%;
+  top: 10%;
   left: 35%; }
 
 .nav {
@@ -910,7 +915,12 @@ header {
   height: 20px;
   padding-top: 20px;
   padding-right: 10px;
-  fill: white; }
+  fill: white;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+  .icon:hover {
+    fill: #5a9bce; }
 
 /*------------------------------------*    #PAGES
 \*------------------------------------*/
@@ -918,6 +928,17 @@ header {
 \*------------------------------------*/
 .about-header {
   position: relative; }
+  .about-header span {
+    font-weight: bold; }
+  .about-header:after {
+    background: #2a4359;
+    opacity: 0.5;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0; }
   .about-header__text {
     position: absolute;
     color: white;
@@ -925,7 +946,8 @@ header {
     top: 20%;
     left: 35vw;
     padding-right: 15px;
-    border-right: 1px solid white; }
+    border-right: 1px solid white;
+    z-index: 8000; }
   .about-header img {
     width: 100%;
     height: 300px;
@@ -1181,6 +1203,17 @@ header {
 \*------------------------------------*/
 .tours-header {
   position: relative; }
+  .tours-header span {
+    font-weight: bold; }
+  .tours-header:after {
+    background: #2a4359;
+    opacity: 0.5;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0; }
   .tours-header__text {
     position: absolute;
     color: white;
@@ -1188,7 +1221,8 @@ header {
     top: 20%;
     left: 35vw;
     padding-right: 15px;
-    border-right: 1px solid white; }
+    border-right: 1px solid white;
+    z-index: 8000; }
   .tours-header img {
     width: 100%;
     height: 300px;

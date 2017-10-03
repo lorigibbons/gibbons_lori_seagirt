@@ -1,6 +1,10 @@
+//@prepros-append vendor/jquery.fitvids.js
+
+
 //= include ../../../bower_components/jquery/dist/jquery.js
 //= include ../../../bower_components/jquery.fitvids/jquery.fitvids.js
 
+//Like document.ready
 jQuery ( function($) {
 
 	var site = new SiteController($);

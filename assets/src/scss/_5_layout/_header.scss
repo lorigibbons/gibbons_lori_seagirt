@@ -16,11 +16,13 @@ header {
 .lighthouse-image {
 	width: 100%;
 	object-fit: cover;
+	transform: scaleX(-1);
+  filter: FlipH;
 }
 .sg-logo {
 	position: absolute;
 	width: 35%;
-	top: 15%;
+	top: 10%;
 	left: 35%;
 }
 .nav {

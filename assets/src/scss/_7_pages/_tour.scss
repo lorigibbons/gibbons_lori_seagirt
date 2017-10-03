@@ -4,6 +4,12 @@
 .tours-header {
   position: relative;
 
+  span {
+    font-weight: bold;
+  }
+  //Overlay Mixin
+  @include overlay;
+
   &__text {
     position: absolute;
     color: white;
@@ -12,6 +18,7 @@
     left: 35vw;
     padding-right: 15px;
     border-right: 1px solid white;
+    z-index: map-get($zindex, overlay);
   }
 
   img {

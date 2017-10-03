@@ -183,7 +183,7 @@
 @mixin overlay() {
 	&:after {
     background: $dark-blue;
-    opacity: 0.5;
+    opacity: 0.7;
     content: ' ';
     width: 100%;
     height: 100%;

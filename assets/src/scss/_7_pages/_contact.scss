@@ -1,49 +1,48 @@
 /*------------------------------------*\
     #CONTACT
 \*------------------------------------*/
-/*.contact {
-  background: url('assets/src/img/contact-bg.jpeg') no-repeat center;
-  width: 100%;
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 255, 0.7);
-}
-
-.tinted-image {
-  background: linear-gradient(
-    rgba(0, 184, 255, 0.45),
-    (rgba(0, 184, 255, 0.45)
-    );
-}*/
 
 .contact-page {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   color: white;
-  background-color: grey;
+  position: relative;
+  @include overlay;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
 
   h2 {
     grid-column: 1 / span 12;
     text-align: left;
   }
   h2:nth-child(3) {
-    margin-top: 100px;
+    margin-top: 15%;
   }
 
   &__form {
     grid-column: 2 / span 5;
     padding-bottom: 20px;
+    z-index: map-get($zindex, overlay);
+
+    input[type=text],
+    textarea {
+      opacity: 0.8;
+    }
   }
   &__social-media {
     grid-column: 7 / span 4;
+    z-index: map-get($zindex, overlay);
+    p {
+      font-size: 1.3rem;
+      line-height: 2.5rem;
+    }
     ul {
       @include no-bullets;
 

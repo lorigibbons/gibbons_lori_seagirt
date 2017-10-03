@@ -6,6 +6,7 @@
 }
 
 .news-blogs {
+  padding: $desktop-padding;
   display: grid;
   grid-template-columns: repeat(12, 1fr [col-start]);
   grid-gap: 20px;

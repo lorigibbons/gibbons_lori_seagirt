@@ -1078,6 +1078,7 @@ header {
   text-align: center; }
 
 .news-blogs {
+  padding: 40px;
   display: grid;
   grid-template-columns: repeat(12, 1fr [col-start]);
   grid-gap: 20px; }

@@ -34,10 +34,7 @@
 .tours-main {
   display: grid;
   grid-template-columns: repeat(12, 1fr [col-start]);
-  :nth-child(even) {
-    background-color: white;
-  }
-  :nth-child(odd) {
+  div:nth-of-type(2n) {
     background-color: $light-grey;
   }
 

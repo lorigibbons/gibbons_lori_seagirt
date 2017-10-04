@@ -1335,9 +1335,7 @@ header {
 .tours-main {
   display: grid;
   grid-template-columns: repeat(12, 1fr [col-start]); }
-  .tours-main :nth-child(even) {
-    background-color: white; }
-  .tours-main :nth-child(odd) {
+  .tours-main div:nth-of-type(2n) {
     background-color: #d3e1e7; }
   .tours-main__section-text {
     grid-column: 1 / span 6;

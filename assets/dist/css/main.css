@@ -944,11 +944,11 @@ header {
     left: 0;
     right: 0; }
   .about-header__text {
-    position: absolute;
+    position: relative;
     color: white;
     text-align: right;
-    top: 20%;
-    left: 35vw;
+    top: 50px;
+    left: -50%;
     padding-right: 15px;
     border-right: 1px solid white;
     z-index: 8000; }
@@ -957,11 +957,15 @@ header {
     height: 300px;
     -o-object-fit: cover;
     object-fit: cover;
-    top: 50px; }
+    top: 50px;
+    margin-top: -200px;
+    vertical-align: middle; }
 
 .main {
   display: grid;
   grid-template-columns: repeat(12, 1fr); }
+  .main div:nth-of-type(2n) {
+    background-color: #d3e1e7; }
   .main img {
     grid-column: 1 / span 6;
     width: 100%;
@@ -971,8 +975,6 @@ header {
   .main__text {
     grid-column: 7 / span 6;
     width: 100%; }
-  .main__text:nth-child(even) {
-    background-color: #d3e1e7; }
   .main a {
     color: #db0206; }
   .main a:link {
@@ -1313,11 +1315,11 @@ header {
   .tours-header span {
     font-weight: bold; }
   .tours-header__text {
-    position: absolute;
+    position: relative;
     color: white;
     text-align: right;
-    top: 20%;
-    left: 35vw;
+    top: 50px;
+    left: -50%;
     padding-right: 15px;
     border-right: 1px solid white;
     z-index: 8000; }
@@ -1326,7 +1328,9 @@ header {
     height: 300px;
     -o-object-fit: cover;
     object-fit: cover;
-    top: 50px; }
+    top: 50px;
+    margin-top: -200px;
+    vertical-align: middle; }
 
 .tours-main {
   display: grid;

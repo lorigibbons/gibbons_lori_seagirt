@@ -11,11 +11,11 @@
   @include overlay;
 
   &__text {
-    position: absolute;
+    position: relative;
     color: white;
     text-align: right;
-    top: 20%;
-    left: 35vw;
+    top:50px;
+    left: -50%;
     padding-right: 15px;
     border-right: 1px solid white;
     z-index: map-get($zindex, overlay);
@@ -26,12 +26,17 @@
     height: 300px;
     object-fit: cover;
     top: 50px;
+    margin-top: -200px;
+    vertical-align: middle;
   }
 }
 
 .main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  div:nth-of-type(2n) {
+    background-color: $light-grey;
+  }
 
   img {
     grid-column: 1 / span 6;
@@ -43,10 +48,6 @@
   &__text {
     grid-column: 7 / span 6;
     width: 100%;
-  }
-
-  &__text:nth-child(even) {
-    background-color: $light-grey;
   }
 
   a {

@@ -974,17 +974,31 @@ header {
     object-fit: cover; }
   .main__text {
     grid-column: 7 / span 6;
-    width: 100%; }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 40px; }
+  .main p, .main h3 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
   .main a {
     color: #db0206; }
   .main a:link {
     text-decoration: none; }
   .main a:hover {
     color: #5a9bce; }
-  .main p, .main h3 {
-    padding: 40px; }
-  .main p {
-    padding-top: 0; }
 
 /*------------------------------------*    #CONTACT
 \*------------------------------------*/

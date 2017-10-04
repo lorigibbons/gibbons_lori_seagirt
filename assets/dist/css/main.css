@@ -940,7 +940,9 @@ header {
     height: 100%;
     position: absolute;
     top: 0;
-    bottom: 0; }
+    bottom: 0;
+    left: 0;
+    right: 0; }
   .about-header__text {
     position: absolute;
     color: white;
@@ -997,7 +999,9 @@ header {
     height: 100%;
     position: absolute;
     top: 0;
-    bottom: 0; }
+    bottom: 0;
+    left: 0;
+    right: 0; }
   .contact-page img {
     width: 100%;
     -o-object-fit: cover;
@@ -1303,7 +1307,9 @@ header {
     height: 100%;
     position: absolute;
     top: 0;
-    bottom: 0; }
+    bottom: 0;
+    left: 0;
+    right: 0; }
   .tours-header span {
     font-weight: bold; }
   .tours-header__text {

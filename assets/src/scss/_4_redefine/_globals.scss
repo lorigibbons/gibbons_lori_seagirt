@@ -50,7 +50,10 @@ textarea {
 }
 
 h2 {
-	font-size: 3rem;
+	font-size: 2rem;
+	@include breakpoint(smaller-screen) {
+		font-size: 3rem;
+	}
 }
 
 h4 {

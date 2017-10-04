@@ -14,11 +14,18 @@
     position: relative;
     color: white;
     text-align: right;
-    top:50px;
-    left: -50%;
+    top: 50px;
+    left: -20%;
     padding-right: 15px;
     border-right: 1px solid white;
     z-index: map-get($zindex, overlay);
+
+    @include breakpoint(large-mobile) {
+  		left: -36%;
+  	}
+    @include breakpoint(smaller-screen) {
+  		left: -50%;
+  	}
   }
 
   img {
@@ -34,36 +41,54 @@
 .main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+
   div:nth-of-type(2n) {
     background-color: $light-grey;
   }
 
   img:nth-of-type(1n) {
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 12;
     width: 100%;
     height: auto;
     object-fit: cover;
+
+    @include breakpoint(smaller-screen) {
+      grid-column: 1 / span 6;
+    }
   }
   img:nth-of-type(2n) {
-    grid-column: 7 / span 6;
+    grid-column: 1 / span 12;
     width: 100%;
     height: auto;
     object-fit: cover;
+
+    @include breakpoint(smaller-screen) {
+      grid-column: 7 / span 6;
+    }
+
   }
 
   &__text:nth-of-type(1n) {
-    grid-column: 7 / span 6;
+    grid-column: 1 / span 12;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: $desktop-padding;
+
+    @include breakpoint(smaller-screen) {
+      grid-column: 7 / span 6;
+    }
   }
   &__text:nth-of-type(2n) {
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 12;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: $desktop-padding;
+
+    @include breakpoint(smaller-screen) {
+      grid-column: 1 / span 6;
+    }
   }
 
   p, h3 {

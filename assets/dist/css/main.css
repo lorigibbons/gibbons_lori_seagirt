@@ -588,7 +588,10 @@ textarea {
   font-family: "Montserrat"; }
 
 h2 {
-  font-size: 3rem; }
+  font-size: 2rem; }
+  @media (min-width: 800px) {
+    h2 {
+      font-size: 3rem; } }
 
 h4 {
   color: white;
@@ -948,10 +951,16 @@ header {
     color: white;
     text-align: right;
     top: 50px;
-    left: -50%;
+    left: -20%;
     padding-right: 15px;
     border-right: 1px solid white;
     z-index: 8000; }
+    @media (min-width: 480px) {
+      .about-header__text {
+        left: -36%; } }
+    @media (min-width: 800px) {
+      .about-header__text {
+        left: -50%; } }
   .about-header img {
     width: 100%;
     height: 300px;
@@ -967,19 +976,25 @@ header {
   .main div:nth-of-type(2n) {
     background-color: #d3e1e7; }
   .main img:nth-of-type(1n) {
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 12;
     width: 100%;
     height: auto;
     -o-object-fit: cover;
     object-fit: cover; }
+    @media (min-width: 800px) {
+      .main img:nth-of-type(1n) {
+        grid-column: 1 / span 6; } }
   .main img:nth-of-type(2n) {
-    grid-column: 7 / span 6;
+    grid-column: 1 / span 12;
     width: 100%;
     height: auto;
     -o-object-fit: cover;
     object-fit: cover; }
+    @media (min-width: 800px) {
+      .main img:nth-of-type(2n) {
+        grid-column: 7 / span 6; } }
   .main__text:nth-of-type(1n) {
-    grid-column: 7 / span 6;
+    grid-column: 1 / span 12;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -994,8 +1009,11 @@ header {
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 40px; }
+    @media (min-width: 800px) {
+      .main__text:nth-of-type(1n) {
+        grid-column: 7 / span 6; } }
   .main__text:nth-of-type(2n) {
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 12;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1010,6 +1028,9 @@ header {
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 40px; }
+    @media (min-width: 800px) {
+      .main__text:nth-of-type(2n) {
+        grid-column: 1 / span 6; } }
   .main p, .main h3 {
     -webkit-box-flex: 1;
     -webkit-flex: 1;

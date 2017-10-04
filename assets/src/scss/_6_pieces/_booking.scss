@@ -9,9 +9,9 @@
   text-align: center;
   width: 60%;
   height: 150px;
-  position: absolute;
-  top: 35%;
-  left: 20%;
+  position: relative;
+  margin: -88px auto -63px auto;
+
     &__title {
       grid-column: 1 / span 10;
     }

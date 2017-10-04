@@ -2,13 +2,13 @@
     #TOUR
 \*------------------------------------*/
 .tours-header {
+  //Overlay Mixin
+  @include overlay;
   position: relative;
 
   span {
     font-weight: bold;
   }
-  //Overlay Mixin
-  @include overlay;
 
   &__text {
     position: absolute;
@@ -29,14 +29,26 @@
   }
 }
 
-
 .tours-main {
   display: grid;
   grid-template-columns: repeat(12, 1fr [col-start]);
+  :nth-child(even) {
+    background-color: white;
+  }
+  :nth-child(odd) {
+    background-color: $light-grey;
+  }
 
     &__section-text {
       grid-column: 1 / span 6;
       padding: $desktop-padding;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      h3, p {
+        flex: 1;
+      }
     }
 
     &__image {

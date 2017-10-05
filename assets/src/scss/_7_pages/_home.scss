@@ -45,6 +45,7 @@
       //800px MQ
       @include breakpoint(smaller-screen) {
         grid-column: 7 / span 6;
+        height: 650px;
       }
     }
 }

@@ -7,11 +7,39 @@
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   text-align: center;
-  width: 60%;
-  height: 150px;
+  width: 80%;
+  height: 100%;
   position: relative;
   margin: -88px auto -63px auto;
 
+  @include breakpoint(smaller-screen) {
+    width: 60%;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    @include breakpoint(small) {
+      font-size: 2rem;
+    }
+  }
+
+  &__title {
+    grid-column: 1 / span 10;
+  }
+  &__date {
+    grid-column: 2 / span 3;
+  }
+  &__visitors {
+    grid-column: 7 / span 3;
+  }
+  &__button {
+    grid-column: 2 / span 8;
+    margin: 17px auto 10px auto;
+    width: 100%;
+  }
+
+  //800px mq
+  @include breakpoint(smaller-screen) {
     &__title {
       grid-column: 1 / span 10;
     }
@@ -23,6 +51,8 @@
     }
     &__button {
       grid-column: 8 / span 2;
-      margin-top: 37px;
+      margin: 37px auto 20px 0;
+      width: 120px;
     }
+  }
 }

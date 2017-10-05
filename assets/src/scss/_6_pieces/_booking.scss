@@ -10,10 +10,11 @@
   width: 80%;
   height: 100%;
   position: relative;
-  margin: -88px auto -63px auto;
+  margin: -88px auto -45px auto;
 
   @include breakpoint(smaller-screen) {
     width: 60%;
+    margin: -88px auto -63px auto;
   }
 
   h4 {

@@ -14,22 +14,39 @@ header {
     #NAV
 \*------------------------------------*/
 .lighthouse-image {
-	width: 100%;
+	width: 150%;
+	height: 400px;
 	object-fit: cover;
 	vertical-align: middle;
-	//FLIP HORIZONTAL
-	transform: scaleX(-1);
-  filter: FlipH;
+	/*margin-top: 55px;*/
+
+	@include breakpoint (large-mobile) {
+		width: 125%;
+	}
+
+	@include breakpoint (small) {
+		width: 100%;
+		height: auto;
+		//FLIP HORIZONTAL
+		transform: scaleX(-1);
+		filter: FlipH;
+	}
 }
 .sg-logo {
 	position: absolute;
-	width: 35%;
+	width: 55%;
 	top: 75px;
-	left: 35%;
+	left: 25%;
+	//640px mq
+	@include breakpoint (small) {
+		width: 30%;
+	}
 
 	//800 px mq
 	@include breakpoint(smaller-screen) {
 		top: 95px;
+		width: 35%;
+		left: 35%;
 	}
 
 	//1200 px mq
@@ -43,7 +60,7 @@ header {
 	text-transform: uppercase;
 	height: 35px;
 	width: 100%;
-	position: sticky;
+	/*position: fixed;  //header img margin added to compensate */
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	z-index: map-get($zindex, navigation);

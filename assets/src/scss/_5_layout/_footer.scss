@@ -32,13 +32,16 @@
   &__stay-connected p {
     width: 60%;
     margin: auto;
+    line-height: 1.2rem;
     @include breakpoint(smaller-screen) {
       margin: 0;
     }
   }
   &__visit-us {
     grid-column: 2 / span 4;
-
+    p {
+      line-height: 1.2rem;
+    }
     //800px mq
     @include breakpoint(smaller-screen) {
       grid-column: 7 / span 2;

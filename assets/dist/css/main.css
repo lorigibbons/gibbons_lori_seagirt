@@ -1231,16 +1231,15 @@ header {
 .center-heading h2 {
   text-align: center; }
 
-.news-blogs1 {
+.news-blogs1-1,
+.news-blogs1-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   padding: 40px; }
-  .news-blogs1__row1 {
+  .news-blogs1-1__row1,
+  .news-blogs1-2__row1 {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -1255,20 +1254,28 @@ header {
     -ms-flex-direction: column;
     flex-direction: column;
     padding-right: 20px; }
-    .news-blogs1__row1 :last-child {
+    @media (min-width: 480px) {
+      .news-blogs1-1__row1,
+      .news-blogs1-2__row1 {
+        padding-right: 10px; } }
+    .news-blogs1-1__row1 :last-child,
+    .news-blogs1-2__row1 :last-child {
       padding-right: 0; }
-  .news-blogs1 p:last-child {
+  .news-blogs1-1 p:last-child,
+  .news-blogs1-2 p:last-child {
     -webkit-align-self: flex-end;
     -ms-flex-item-align: end;
     align-self: flex-end;
     margin-top: auto; }
-  .news-blogs1 img {
+  .news-blogs1-1 img,
+  .news-blogs1-2 img {
     width: 100%;
     height: 164px;
     -o-object-fit: cover;
     object-fit: cover; }
 
-.news-blogs2 {
+.news-blogs2-1,
+.news-blogs2-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1277,7 +1284,8 @@ header {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 40px; }
-  .news-blogs2__row2 {
+  .news-blogs2-1__row2,
+  .news-blogs2-2__row2 {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -1292,22 +1300,21 @@ header {
     -ms-flex-direction: column;
     flex-direction: column;
     padding-right: 20px; }
-    .news-blogs2__row2 :last-child {
+    .news-blogs2-1__row2 :last-child,
+    .news-blogs2-2__row2 :last-child {
       padding-right: 0; }
-  .news-blogs2 p:last-child {
+  .news-blogs2-1 p:last-child,
+  .news-blogs2-2 p:last-child {
     -webkit-align-self: flex-end;
     -ms-flex-item-align: end;
     align-self: flex-end;
     margin-top: auto; }
-  .news-blogs2 img {
+  .news-blogs2-1 img,
+  .news-blogs2-2 img {
     width: 100%;
     height: 164px;
     -o-object-fit: cover;
     object-fit: cover; }
-
-@media (min-width: 800px) {
-  .news-blogs1 p {
-    color: blue; } }
 
 /* CSS GRID
 .news-blogs {

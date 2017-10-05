@@ -24,8 +24,19 @@ header {
 .sg-logo {
 	position: absolute;
 	width: 35%;
-	top: 10%;
+	top: 75px;
 	left: 35%;
+
+	//800 px mq
+	@include breakpoint(smaller-screen) {
+		top: 95px;
+	}
+
+	//1200 px mq
+	@include breakpoint(regular-screen) {
+		top: 13%;
+	}
+
 }
 .nav {
 	background-color: $dark-blue;

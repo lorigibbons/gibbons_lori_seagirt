@@ -781,8 +781,14 @@ header {
 .sg-logo {
   position: absolute;
   width: 35%;
-  top: 10%;
+  top: 75px;
   left: 35%; }
+  @media (min-width: 800px) {
+    .sg-logo {
+      top: 95px; } }
+  @media (min-width: 1200px) {
+    .sg-logo {
+      top: 13%; } }
 
 .nav {
   background-color: #2a4359;

@@ -27,7 +27,7 @@
       }
 
     @include breakpoint(medium) {
-      padding: $desktop-padding;
+      padding-right: 20px;
 
       :last-child {
         padding-right: 0;

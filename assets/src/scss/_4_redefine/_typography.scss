@@ -1,7 +1,17 @@
 /*------------------------------------*\
     #TYPOGRAPHY
 \*------------------------------------*/
-@fontface {
+@font-face {
   font-family: 'Montserrat', sans-serif;
+}
+@font-face {
   font-family: 'Cinzel', serif;
+}
+@font-face {
+  font-family: 'TrajanBold';
+  src: url('assets/src/fonts/trajanpro-bold.otf');
+}
+@font-face {
+  font-family: 'TrajanRegular';
+  src: url('assets/src/fonts/trajanpro-regular.otf');
 }

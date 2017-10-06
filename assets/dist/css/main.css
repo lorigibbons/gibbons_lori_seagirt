@@ -574,7 +574,7 @@ h2,
 h3,
 h4,
 nav {
-  font-family: "Cinzel";
+  font-family: "TrajanRegular";
   font-weight: 100;
   padding: 10px 0; }
 
@@ -708,9 +708,19 @@ a {
 
 /*------------------------------------*    #TYPOGRAPHY
 \*------------------------------------*/
-@fontface {
-  font-family: 'Montserrat', sans-serif;
+@font-face {
+  font-family: 'Montserrat', sans-serif; }
+
+@font-face {
   font-family: 'Cinzel', serif; }
+
+@font-face {
+  font-family: 'TrajanBold';
+  src: url("assets/src/fonts/trajanpro-bold.otf"); }
+
+@font-face {
+  font-family: 'TrajanRegular';
+  src: url("assets/src/fonts/trajanpro-regular.otf"); }
 
 /*------------------------------------*    #BUTTONS
 \*------------------------------------*/
@@ -1274,7 +1284,7 @@ header {
       .news-blogs1__row1, .news-blogs1__row2,
       .news-blogs2__row1,
       .news-blogs2__row2 {
-        padding: 40px; }
+        padding-right: 20px; }
         .news-blogs1__row1 :last-child, .news-blogs1__row2 :last-child,
         .news-blogs2__row1 :last-child,
         .news-blogs2__row2 :last-child {
@@ -1411,7 +1421,7 @@ header {
     .testimonials__text p {
       font-size: 4vh;
       line-height: 4vh;
-      font-family: "Cinzel";
+      font-family: "TrajanRegular";
       color: #2a4359; }
     .testimonials__text p:last-child {
       -webkit-align-self: flex-end;

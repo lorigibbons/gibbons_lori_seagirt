@@ -27,7 +27,7 @@
   }
 
   &__form {
-    grid-column: 2 / span 5;
+    grid-column: 2 / span 10;
     padding-bottom: 20px;
     z-index: map-get($zindex, overlay);
 
@@ -35,14 +35,19 @@
     textarea {
       opacity: 0.8;
     }
+
+    @include breakpoint(smedium) {
+      grid-column: 2 / span 5;
+    }
   }
   &__social-media {
-    grid-column: 7 / span 4;
+    grid-column: 2 / span 5;
     z-index: map-get($zindex, overlay);
-    p {
-      font-size: 1.3rem;
-      line-height: 2.5rem;
+
+    @include breakpoint(smedium) {
+      grid-column: 8 / span 5;
     }
+
     ul {
       @include no-bullets;
 
@@ -59,4 +64,15 @@
       }
     }
   }
+  &__info {
+    grid-column: 2 / span 5;
+    z-index: map-get($zindex, overlay);
+    }
+    p {
+      font-size: 1.3rem;
+      line-height: 2.5rem;
+    }
+    @include breakpoint(smedium) {
+      grid-column: 8 / span 5;
+    }
 }

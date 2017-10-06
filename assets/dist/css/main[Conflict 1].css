@@ -1117,8 +1117,7 @@ header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   color: white;
-  position: relative;
-  padding-bottom: 10px; }
+  position: relative; }
   .contact-page:after {
     background: #2a4359;
     opacity: 0.7;
@@ -1130,9 +1129,6 @@ header {
     bottom: 0;
     left: 0;
     right: 0; }
-  @media (min-width: 900px) {
-    .contact-page {
-      padding-bottom: 20px; } }
   .contact-page img {
     width: 100%;
     -o-object-fit: cover;
@@ -1142,9 +1138,9 @@ header {
     left: 0;
     z-index: -1;
     height: 1100px; }
-    @media (min-width: 640px) {
+    @media (min-width: 480px) {
       .contact-page img {
-        height: 1000px; } }
+        height: 900px; } }
     @media (min-width: 900px) {
       .contact-page img {
         height: 800px; } }

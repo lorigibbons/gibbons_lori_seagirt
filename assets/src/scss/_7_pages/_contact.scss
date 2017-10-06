@@ -8,6 +8,10 @@
   color: white;
   position: relative;
   @include overlay;
+  padding-bottom: 10px;
+  @include breakpoint(smedium) {
+    padding-bottom: 20px;
+  }
 
   img {
     width: 100%;
@@ -16,6 +20,13 @@
     top: 0;
     left: 0;
     z-index: -1;
+    height: 1100px;
+    @include breakpoint(small) {
+      height: 1000px;
+    }
+    @include breakpoint(smedium) {
+      height: 800px;
+    }
   }
 
   h2 {
@@ -34,6 +45,11 @@
     input[type=text],
     textarea {
       opacity: 0.8;
+      width: 100%;
+      padding-right: 0;
+      @include breakpoint(regular-screen) {
+        width: 80%;
+      }
     }
 
     @include breakpoint(smedium) {
@@ -41,9 +57,17 @@
     }
   }
   &__social-media {
-    grid-column: 2 / span 5;
+    grid-column: 1 / span 12;
     z-index: map-get($zindex, overlay);
-
+      h2 {
+        text-align: center;
+      }
+    @include breakpoint(small) {
+      grid-column: 2 / span 5;
+      h2 {
+        text-align: left;
+      }
+    }
     @include breakpoint(smedium) {
       grid-column: 8 / span 5;
     }
@@ -64,15 +88,44 @@
       }
     }
   }
-  &__info {
-    grid-column: 2 / span 5;
-    z-index: map-get($zindex, overlay);
-    }
-    p {
-      font-size: 1.3rem;
-      line-height: 2.5rem;
-    }
+  &__info-desk {  //desktop
+    display: none; //do not display on mobile
     @include breakpoint(smedium) {
-      grid-column: 8 / span 5;
+      display: block;  //display after 900px
+      margin-top: 120px;
+      z-index: map-get($zindex, overlay);
+        h2, p {
+          text-align: left;
+        }
+        p {
+          font-size: 1.3rem;
+          line-height: 2.5rem;
+        }
+        grid-column: 8 / span 5;
+          h2, p {
+            text-align: left;
+          }
     }
+  }
+  &__info-mobile {  //mobile
+    grid-column: 1 / span 12; //display on mobile sizes
+    z-index: map-get($zindex, overlay);
+      h2, p {
+        text-align: center;
+      }
+      p {
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+      }
+      @include breakpoint(small) {
+        grid-column: 7 / span 5;
+        h2, p {
+          text-align: right;
+        }
+      }
+
+    @include breakpoint(smedium) { //hide mobile info 900 px and up
+        display: none;
+    }
+  }
 }

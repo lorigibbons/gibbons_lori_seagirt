@@ -574,7 +574,7 @@ h2,
 h3,
 h4,
 nav {
-  font-family: "TrajanRegular";
+  font-family: "Cinzel";
   font-weight: 100;
   padding: 10px 0; }
 
@@ -819,7 +819,9 @@ header {
   text-transform: uppercase;
   height: 35px;
   width: 100%;
-  /*position: fixed;  //header img margin added to compensate */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   z-index: 10000; }
@@ -1495,7 +1497,7 @@ header {
     .testimonials__text p {
       font-size: 4vh;
       line-height: 4vh;
-      font-family: "TrajanRegular";
+      font-family: "Cinzel";
       color: #2a4359; }
     .testimonials__text p:last-child {
       -webkit-align-self: flex-end;

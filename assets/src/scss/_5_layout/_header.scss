@@ -60,7 +60,8 @@ header {
 	text-transform: uppercase;
 	height: 35px;
 	width: 100%;
-	/*position: fixed;  //header img margin added to compensate */
+	position: sticky;
+	top: 0;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	z-index: map-get($zindex, navigation);

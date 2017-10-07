@@ -572,11 +572,15 @@ body {
 h1,
 h2,
 h3,
-h4,
-nav {
+h4 {
   font-family: "Cinzel";
   font-weight: 100;
   padding: 10px 0; }
+
+nav {
+  font-family: "Cinzel";
+  font-weight: 100;
+  padding: 0 0; }
 
 h5,
 h6,
@@ -775,8 +779,6 @@ button {
 header {
   position: relative; }
 
-/*------------------------------------*    #NAV
-\*------------------------------------*/
 .lighthouse-image {
   width: 150%;
   height: 400px;
@@ -814,17 +816,22 @@ header {
     .sg-logo {
       top: 13%; } }
 
+/*------------------------------------*    #NAV
+\*------------------------------------*/
 .nav {
+  display: none;
   background-color: #2a4359;
   text-transform: uppercase;
   height: 35px;
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  z-index: 10000; }
+  top: 0; }
+  @media (min-width: 768px) {
+    .nav {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      z-index: 9500; } }
   .nav__navigation {
     display: -webkit-box;
     display: -webkit-flex;
@@ -858,12 +865,78 @@ header {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    padding-top: 7px; }
     .nav ul.nav__social-media > li {
       -webkit-box-flex: 1;
       -webkit-flex: 1;
       -ms-flex: 1;
       flex: 1; }
+
+/*------------------------------------*	    #HAMBURGER
+	\*------------------------------------*/
+.hamburger {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 9999; }
+  @media (min-width: 768px) {
+    .hamburger {
+      display: none; } }
+  .hamburger svg {
+    fill: #2a4359;
+    height: 30px;
+    width: 30px; }
+
+.mobile-nav {
+  background: #2a4359;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  top: -100%;
+  -webkit-transition: bottom 0.25s ease-in-out, top 0.25s ease-in-out;
+  -o-transition: bottom 0.25s ease-in-out, top 0.25s ease-in-out;
+  transition: bottom 0.25s ease-in-out, top 0.25s ease-in-out;
+  z-index: 10000; }
+  .mobile-nav.open {
+    bottom: 0;
+    top: 0; }
+  .mobile-nav__close {
+    color: #2a4359;
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+    .mobile-nav__close a {
+      text-decoration: none;
+      font-size: 2em; }
+  .mobile-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .mobile-nav ul li {
+      font-family: "Montserrat";
+      font-size: 1.5em;
+      line-height: 1.33;
+      letter-spacing: 2.7px;
+      text-align: center;
+      margin-bottom: 20px; }
+    .mobile-nav ul a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase; }
 
 /*------------------------------------*    #FOOTER
 \*------------------------------------*/

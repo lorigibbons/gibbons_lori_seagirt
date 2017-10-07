@@ -1,4 +1,4 @@
-//@prepros-append vendor/jquery.fitvids.js
+
 
 
 //= include ../../../bower_components/jquery/dist/jquery.js
@@ -14,20 +14,37 @@ jQuery ( function($) {
 
 function SiteController($)
 {
-	self.init = function()
+	self.init = function()  //function called when loads, like document.ready
 	{
-		initFitVid();
+		//initFitVid();
+		initMobileNav();
 	}
 
 	// MAKES VIDEOS RESIZE RESPONSIVELY
-	function initFitVid() {
+	// function initFitVid() {
+	//
+	// 	// TARGET YOUTUBE
+	// 	$('iframe[src*="youtube"]').parent().fitVids();
+	//
+	// 	// TARGET VIMEO
+	// 	$('iframe[src*="vimeo"]').parent().fitVids();
+	//
+	// }
 
-		// TARGET YOUTUBE
-		$('iframe[src*="youtube"]').parent().fitVids();
+	//MOBILE NAV
+	function initMobileNav() {
+		//Click on trigger, open mobile nav
+		$('.js-mobile-trigger').click(function(e) {
+			e.preventDefault();//prevents mobile trigger link from going to another page
+			console.log('getting there');
+			$('.js-mobile-nav').addClass('open');
+		});
 
-		// TARGET VIMEO
-		$('iframe[src*="vimeo"]').parent().fitVids();
-
+		//Click on close button, close mobile nav
+		$('.js-mobile-nav-close').click(function(e) {
+			e.preventDefault();//prevents mobile trigger link from going to another page
+			$('.js-mobile-nav').removeClass('open');
+		});
 	}
 
 	return self;

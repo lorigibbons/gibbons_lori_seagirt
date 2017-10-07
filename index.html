@@ -14,17 +14,39 @@
   <div class="site-wrapper">
     <!-- HEADER -->
     <header>
+      <!-- MOBILE NAV -->
+      <nav class="mobile-nav js-mobile-nav">
+        <div class="mobile-nav__close"> <!-- X Button on mobile nav-->
+          <a href="#" class="js-mobile-nav-close">&times;</a> <!-- Appears when navigation is closed AND is under portrait size-->
+        </div>
+        <ul>
+          <li class="home"><a href="index.html">Home</a></li>
+          <li class="about"><a href="about.html">About</a></li>
+          <li class="tours"><a href="tour.html">Tours</a></li>
+          <li class="news"><a href="news.html">News</a></li>
+          <li class="contact"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav> <!-- end mobile nav-->
+
+      <!-- HAMBURGER -->
+      <div class="hamburger">
+        <a href="#" class="js-mobile-trigger">
+          <svg class="icon icon-menu2"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-menu2"></use></svg>
+        </a>
+      </div>
+
+
       <nav class="nav">
         <ul class="nav__navigation">
           <li class="home"><a href="index.html">Home</a></li>
-          <li class="about"><a href="about.html" target="_blank">About</a></li>
+          <li class="about"><a href="about.html">About</a></li>
           <li class="tours"><a href="tour.html">Tours</a></li>
           <li class="news"><a href="news.html">News</a></li>
           <li class="contact"><a href="contact.html">Contact</a></li>
         </ul>
         <ul class="nav__social-media">
           <!-- EMAIL -->
-          <li><a href="#" target="_blank"><svg class="icon icon-mail"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-mail"></use></svg></a></li>
+          <li><a href="#" target="_blank"><svg class="icon icon-envelop"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-envelop"></use></svg></a></li>
           <!-- FACEBOOK -->
           <li><a href="#" target="_blank"><svg class="icon icon-facebook"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-facebook"></use></svg></a></li>
           <!-- INSTAGRAM -->
@@ -94,7 +116,7 @@
           <button>Sign Up</button>
           <ul class="footer__social-media">
             <!-- EMAIL -->
-            <li><a href="#"><svg class="icon icon-mail"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-mail"></use></svg></a></li>
+            <li><a href="#"><svg class="icon icon-envelop"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-envelop"></use></svg></a></li>
             <!-- FACEBOOK -->
             <li><a href="#"><svg class="icon icon-facebook"><use xlink:href="assets/dist/img/symbol-defs.svg#icon-facebook"></use></svg></li>
             <!-- INSTAGRAM -->
@@ -124,6 +146,7 @@
       </footer>
     </div> <!-- END SITE WRAPPER DIV -->
 
-    <script src="/assets/dist/js/app.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/assets/dist/js/app-dist.js" charset="utf-8"></script>
   </body>
 </html>

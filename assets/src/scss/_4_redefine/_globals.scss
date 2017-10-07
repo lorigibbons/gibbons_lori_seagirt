@@ -32,13 +32,16 @@ body {
 h1,
 h2,
 h3,
-h4,
-nav {
+h4 {
 	font-family: $serif;
 	font-weight: 100;
 	padding: 10px 0;
 }
-
+nav {
+	font-family: $serif;
+	font-weight: 100;
+	padding: 0 0;
+}
 h5,
 h6,
 p,

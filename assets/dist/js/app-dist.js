@@ -1,0 +1,2 @@
+function SiteController(e){function n(){e(".js-mobile-trigger").click(function(n){n.preventDefault(),console.log("getting there"),e(".js-mobile-nav").addClass("open")}),e(".js-mobile-nav-close").click(function(n){n.preventDefault(),e(".js-mobile-nav").removeClass("open")})}return self.init=function(){n()},self}jQuery(function(e){new SiteController(e).init()});
+//# sourceMappingURL=app-dist.js.map

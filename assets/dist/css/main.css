@@ -1339,24 +1339,31 @@ header {
   grid-template-columns: repeat(12, 1fr); }
   .main div:nth-of-type(2n) {
     background-color: #d3e1e7; }
+  .main img {
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center center;
+    object-position: center center; }
   .main img:nth-of-type(1n) {
     grid-column: 1 / span 12;
-    width: 100%;
-    height: auto;
-    -o-object-fit: cover;
-    object-fit: cover; }
+    width: 100%; }
     @media (min-width: 800px) {
       .main img:nth-of-type(1n) {
-        grid-column: 1 / span 6; } }
+        grid-column: 1 / span 6;
+        height: 680px; } }
   .main img:nth-of-type(2n) {
     grid-column: 1 / span 12;
-    width: 100%;
-    height: auto;
-    -o-object-fit: cover;
-    object-fit: cover; }
+    width: 100%; }
     @media (min-width: 800px) {
       .main img:nth-of-type(2n) {
-        grid-column: 7 / span 6; } }
+        grid-column: 7 / span 6;
+        height: 680px; } }
+  .main__text h3 {
+    font-size: 1.25em; }
+    @media (min-width: 800px) {
+      .main__text h3 {
+        font-size: 1.6875em; } }
   .main__text:nth-of-type(1n) {
     grid-column: 1 / span 12;
     display: -webkit-box;
@@ -1372,10 +1379,11 @@ header {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 40px; }
+    padding: 20px; }
     @media (min-width: 800px) {
       .main__text:nth-of-type(1n) {
-        grid-column: 7 / span 6; } }
+        grid-column: 7 / span 6;
+        padding: 40px; } }
   .main__text:nth-of-type(2n) {
     grid-column: 1 / span 12;
     display: -webkit-box;
@@ -1391,10 +1399,11 @@ header {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 40px; }
+    padding: 20px; }
     @media (min-width: 800px) {
       .main__text:nth-of-type(2n) {
-        grid-column: 1 / span 6; } }
+        grid-column: 1 / span 6;
+        padding: 40px; } }
   .main p, .main h3 {
     -webkit-box-flex: 1;
     -webkit-flex: 1;

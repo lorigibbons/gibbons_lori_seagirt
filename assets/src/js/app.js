@@ -1,4 +1,4 @@
-
+//@prepros-prepend vendor/jquery.fitvids.js
 
 
 //= include ../../../bower_components/jquery/dist/jquery.js
@@ -16,20 +16,19 @@ function SiteController($)
 {
 	self.init = function()  //function called when loads, like document.ready
 	{
-		//initFitVid();
+		initFitVid();
 		initMobileNav();
 	}
 
 	// MAKES VIDEOS RESIZE RESPONSIVELY
-	// function initFitVid() {
-	//
-	// 	// TARGET YOUTUBE
-	// 	$('iframe[src*="youtube"]').parent().fitVids();
-	//
-	// 	// TARGET VIMEO
+	function initFitVid() {
+	// TARGET YOUTUBE
+		$('iframe[src*="youtube"]').parent().fitVids();
+
+	// TARGET VIMEO
 	// 	$('iframe[src*="vimeo"]').parent().fitVids();
 	//
-	// }
+	 }
 
 	//MOBILE NAV
 	function initMobileNav() {

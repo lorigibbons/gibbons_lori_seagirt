@@ -1,4 +1,5 @@
 //@prepros-prepend vendor/jquery.fitvids.js
+//@prepros-append vendor/owl.carousel.js
 
 
 //= include ../../../bower_components/jquery/dist/jquery.js
@@ -18,7 +19,13 @@ function SiteController($)
 	{
 		initFitVid();
 		initMobileNav();
+		initOwl();
 	}
+
+	//OWL carousel
+	function initOwl() {
+		$(".owl-carousel").owlCarousel();
+	};
 
 	// MAKES VIDEOS RESIZE RESPONSIVELY
 	function initFitVid() {

@@ -76,14 +76,11 @@
       grid-column: 2 / span 10;
       display: flex;
       align-items: center;
+      justify-content: center;
       flex-direction: column;
       align-content: center;
       background-color: rgba(255, 255, 255, 0.4);
       padding: 20px;
-
-      @include breakpoint(smaller-screen) {
-        grid-column: 2 / span 5;
-      }
 
       p {
         font-size: 4vh;
@@ -99,13 +96,21 @@
       span {
         font-size: 4.4vh;
       }
-    }
-    img {
-      grid-column: 2 / span 10;
-      width: 100%;
 
       @include breakpoint(smaller-screen) {
-        grid-column: 7 / span 5;
+        grid-column: 2 / span 5;
       }
+
+      img {
+        grid-column: 2 / span 10;
+        width: 100%;
+
+        @include breakpoint(smaller-screen) {
+          grid-column: 7 / span 5;
+        }
+      }
+
+
     }
+
 }

@@ -1531,15 +1531,30 @@ header {
   .services-grid p {
     color: white; }
   .services-grid img {
-    width: 30%; }
-  .services-grid__tours {
-    grid-column: 2 / span 2; }
-  .services-grid__photo-tours {
-    grid-column: 4 / span 2; }
-  .services-grid__membership {
-    grid-column: 6 / span 2; }
-  .services-grid__volunteer {
-    grid-column: 8 / span 2; }
+    width: 20%; }
+    @media (min-width: 1024px) {
+      .services-grid img {
+        width: 30%; } }
+  .services-grid__tours, .services-grid__photo-tours, .services-grid__membership, .services-grid__volunteer {
+    grid-column: 2 / span 8; }
+  @media (min-width: 480px) {
+    .services-grid__tours {
+      grid-column: 2 / span 4; }
+    .services-grid__photo-tours {
+      grid-column: 6 / span 4; }
+    .services-grid__membership {
+      grid-column: 2 / span 4; }
+    .services-grid__volunteer {
+      grid-column: 6 / span 4; } }
+  @media (min-width: 1024px) {
+    .services-grid__tours {
+      grid-column: 2 / span 2; }
+    .services-grid__photo-tours {
+      grid-column: 4 / span 2; }
+    .services-grid__membership {
+      grid-column: 6 / span 2; }
+    .services-grid__volunteer {
+      grid-column: 8 / span 2; } }
 
 .testimonials {
   background-color: #5a9bce;
@@ -1548,7 +1563,7 @@ header {
   text-align: center;
   padding: 40px 0; }
   .testimonials__text {
-    grid-column: 2 / span 5;
+    grid-column: 2 / span 10;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1567,6 +1582,9 @@ header {
     align-content: center;
     background-color: rgba(255, 255, 255, 0.4);
     padding: 20px; }
+    @media (min-width: 800px) {
+      .testimonials__text {
+        grid-column: 2 / span 5; } }
     .testimonials__text p {
       font-size: 4vh;
       line-height: 4vh;
@@ -1581,8 +1599,11 @@ header {
     .testimonials__text span {
       font-size: 4.4vh; }
   .testimonials img {
-    grid-column: 7 / span 5;
+    grid-column: 2 / span 10;
     width: 100%; }
+    @media (min-width: 800px) {
+      .testimonials img {
+        grid-column: 7 / span 5; } }
 
 /*------------------------------------*    #TOUR
 \*------------------------------------*/

@@ -1331,7 +1331,7 @@ header {
     -o-object-fit: cover;
     object-fit: cover;
     top: 50px;
-    margin-top: -214px;
+    margin-top: -194px;
     vertical-align: middle; }
 
 .main {
@@ -1870,9 +1870,13 @@ header {
     height: 300px;
     -o-object-fit: cover;
     object-fit: cover;
-    top: 50px;
-    margin-top: -200px;
-    vertical-align: middle; }
+    top: 0px;
+    margin-top: -150px;
+    -o-object-position: center center;
+    object-position: center center; }
+    @media (min-width: 900px) {
+      .tours-header img {
+        margin-top: -150px; } }
 
 .tours-main {
   display: grid;

@@ -42,7 +42,6 @@ function SiteController($)
 		//Click on trigger, open mobile nav
 		$('.js-mobile-trigger').click(function(e) {
 			e.preventDefault();//prevents mobile trigger link from going to another page
-			console.log('getting there');
 			$('.js-mobile-nav').addClass('open');
 		});
 

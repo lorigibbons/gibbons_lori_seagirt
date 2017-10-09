@@ -15,7 +15,7 @@ jQuery ( function($) {
 
 function SiteController($)
 {
-	self.init = function()  //function called when loads, like document.ready
+	self.init = function()  //functions are being called when loads, like document.ready
 	{
 		initFitVid();
 		initMobileNav();
@@ -24,7 +24,16 @@ function SiteController($)
 
 	//OWL carousel
 	function initOwl() {
-		$(".owl-carousel").owlCarousel();
+		$(".owl-carousel").owlCarousel({
+			margin: 10,
+			margin:10,
+	    autoWidth:true,
+	    items:6,
+			loop: true,
+			autoplay:true,
+		 autoplayTimeout:2000,
+		 autoplayHoverPause:true
+		});
 	};
 
 	// MAKES VIDEOS RESIZE RESPONSIVELY

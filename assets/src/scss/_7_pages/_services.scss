@@ -98,9 +98,8 @@
       p:last-child {
         align-self: flex-end;
         font-size: em(12px);
-        padding-top: 20px;
       }
-      span {
+      p span {
         font-size: em(18px);
       }
 
@@ -111,6 +110,7 @@
       img {
         grid-column: 2 / span 10;
         width: 80%;
+        height: 80%;
         object-fit: cover;
 
         @include breakpoint(smaller-screen) {

@@ -1878,9 +1878,8 @@ header {
       -webkit-align-self: flex-end;
       -ms-flex-item-align: end;
       align-self: flex-end;
-      font-size: 0.75em;
-      padding-top: 20px; }
-    .testimonials__text span {
+      font-size: 0.75em; }
+    .testimonials__text p span {
       font-size: 1.125em; }
     @media (min-width: 800px) {
       .testimonials__text {
@@ -1888,6 +1887,7 @@ header {
     .testimonials__text img {
       grid-column: 2 / span 10;
       width: 80%;
+      height: 80%;
       -o-object-fit: cover;
       object-fit: cover; }
       @media (min-width: 800px) {

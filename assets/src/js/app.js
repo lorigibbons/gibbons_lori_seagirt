@@ -26,9 +26,8 @@ function SiteController($)
 	function initOwl() {
 		$(".owl-carousel").owlCarousel({
 			margin: 10,
-			margin:10,
 	    autoWidth:true,
-	    items:6,
+	    items:7,
 			loop: true,
 			autoplay:true,
 		 autoplayTimeout:2000,
